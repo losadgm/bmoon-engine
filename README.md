@@ -432,7 +432,7 @@ Una carta tiene exactamente un `ScriptComponent` con un `script_id`. La modulari
 Solo los scripts principales de cartas están registrados en el manifest del manager. Los módulos auxiliares (habilidades compartidas, utilidades) viven en el filesystem y Luau los encuentra via `require` sin que el manager necesite conocerlos:
 
 ```lua
--- cards/llanowar_elves.luau  (registrado en el manifest)
+-- cards/blood_moon.luau  (registrado en el manifest)
 local mana_ability = require("abilities.tap_for_mana")
 local elf_synergy  = require("abilities.elf_synergy")
 
@@ -630,7 +630,7 @@ name = "my_card_game"
 
 [[script]]
 id   = "cards.blood_moon"
-path = "scripts/cards/llanowar_elves.luau"
+path = "scripts/cards/blood_moon.luau"
 
 [[script]]
 id   = "cards.lightning_bolt"
