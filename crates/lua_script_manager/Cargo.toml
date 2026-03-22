@@ -1,0 +1,13 @@
+[package]
+name = "lua_script_manager"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+lua_table = { path = "../lua_table" }
+mlua = { version = "0.11.6", features = ["luau", "vendored"] }
+caches = "0.3.0"
+ahash = "0.8.12"
+serde = { version = "1.0.228", features = ["derive"] }
+toml = "1.0.6"
+walkdir = "2.5.0"

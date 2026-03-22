@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "crates/engine",
+    "crates/engine_lua",
+    "crates/lua_script_manager",
+    "crates/lua_table",
+    "crates/lua_table_derive",
+]
+resolver = "2"

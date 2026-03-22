@@ -1,0 +1,13 @@
+[package]
+name = "engine_lua"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+engine = { path = "../engine" }
+lua_script_manager = { path = "../lua_script_manager" }
+mlua = { version = "0.11.6", features = ["luau", "vendored"] }
+
+[dev-dependencies]
+lua_table = { path = "../lua_table" }
+tempfile = "3"
